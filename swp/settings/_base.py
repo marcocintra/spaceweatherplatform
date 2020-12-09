@@ -71,7 +71,7 @@ MIDDLEWARE = [
     'django.middleware.locale.LocaleMiddleware',
 ]
 
-ROOT_URLCONF = 'myproject.urls'
+ROOT_URLCONF = 'swp.urls'
 
 TEMPLATES = [
     {
@@ -89,7 +89,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'myproject.wsgi.application'
+WSGI_APPLICATION = 'swp.wsgi.application'
 
 
 # Database
@@ -146,7 +146,7 @@ LOCALE_PATHS = [
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'myproject', 'site_static'),
+    os.path.join(BASE_DIR, 'swp', 'site_static'),
 ]
 
 timestamp = get_git_changeset_timestamp(BASE_DIR)
