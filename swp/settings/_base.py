@@ -20,7 +20,7 @@ EXTERNAL_APPS_PATH = os.path.join(EXTERNAL_BASE, "apps")
 sys.path = ["", EXTERNAL_LIBS_PATH, EXTERNAL_APPS_PATH] + sys.path
 
 
-with open(os.path.join(os.path.dirname(__file__), 'secrets.json'), 'r') as f:
+with open(os.path.join(os.path.dirname(__file__), 'sample_secrets.json'), 'r') as f:
     secrets = json.loads(f.read())
 
 
