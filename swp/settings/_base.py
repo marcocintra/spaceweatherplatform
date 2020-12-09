@@ -97,12 +97,12 @@ WSGI_APPLICATION = 'swp.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': get_secret('DATABASE_NAME'),
-        'USER': get_secret('DATABASE_USER'),
-        'PASSWORD': get_secret('DATABASE_PASSWORD'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'swp',
+        'USER': 'root',
+        'PASSWORD': 'root',
         'HOST': 'localhost',
-        'PORT': '5432',
+        'PORT': '3306',
     }}
 
 
@@ -128,9 +128,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'pt-br'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Sao_Paulo'
 
 USE_I18N = True
 
